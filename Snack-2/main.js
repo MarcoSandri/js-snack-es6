@@ -102,21 +102,34 @@ const squadre = [
 ];
 
 let classifica = [];
+let classificaArray = [];
+let classificaOggetto = [];
 
-// Assegno un valore casuale a gol fatti e falli subiti per ogni squadra dell'array
 for(let i = 0; i<squadre.length; i++) {
-
+    
+    // Assegno un valore casuale a gol fatti e falli subiti per ogni squadra dell'array
     squadre[i]["falli subiti"] = randomNumber(100, 300);
     squadre[i]["punti fatti"] = randomNumber(30, 100);
-    console.log(squadre[i]["falli subiti"]);
 
     // Prendo solamente il nome e il valore dei falli subiti e li assegno al nuovo array
     const {nome, 'falli subiti': falli} = squadre[i];
     classifica.push(nome, falli);
+
+    // Array contenente altri array con nome e falli subiti
+    let tempArray = [nome, falli];
+    classificaArray.push(tempArray);
+
+    // Array di oggetti contenenti solo nome e falli subiti
+    let tempObject = {
+        nome : squadre[i].nome,
+        "falli subiti" : squadre[i]["falli subiti"]
+    };
+    classificaOggetto.push(tempObject);
 }
 
-console.log(classifica);
-
+console.log("Array con nomi e falli subiti: " + classifica);
+console.log("Array di array con nomi e falli subiti: " + classificaArray);
+console.log("Array di oggetti con nomi e falli subiti: " + classificaOggetto);
 
 
 function randomNumber(min, max) {
