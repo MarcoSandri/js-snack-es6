@@ -1,43 +1,43 @@
 const biciclette = [
     {
         nome : "Atala",
-        peso : 7,
+        peso : 7
     },
     {
         nome : "Basso",
-        peso : 8,
+        peso : 8
     },
     {
         nome : "Btwin",
-        peso : 5,
+        peso : 5
     },
     {
         nome : "Merida",
-        peso : 3,
+        peso : 3
     },
     {
         nome : "Trek",
-        peso : 4,
+        peso : 4
     },
     {
         nome : "Specialized",
-        peso : 6,
+        peso : 6
     },
     {
         nome : "Cannondale",
-        peso : 8,
+        peso : 8
     },
     {
         nome : "Kona",
-        peso : 9,
+        peso : 9
     },
     {
         nome : "Santa Cruz",
-        peso : 3,
+        peso : 3
     },
     {
         nome : "Giant",
-        peso : 3,
+        peso : 3
     }
 ];
 
