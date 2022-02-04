@@ -116,15 +116,10 @@ for(let i = 0; i<squadre.length; i++) {
     classifica.push(nome, falli);
 
     // Array contenente altri array con nome e falli subiti
-    let tempArray = [nome, falli];
-    classificaArray.push(tempArray);
+    classificaArray.push([nome, falli]);
 
     // Array di oggetti contenenti solo nome e falli subiti
-    let tempObject = {
-        nome : squadre[i].nome,
-        "falli subiti" : squadre[i]["falli subiti"]
-    };
-    classificaOggetto.push(tempObject);
+    classificaOggetto.push({nome, falli});
 }
 
 console.log("Array con nomi e falli subiti: " + classifica);

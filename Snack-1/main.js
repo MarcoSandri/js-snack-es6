@@ -42,8 +42,7 @@ const biciclette = [
 ];
 
 // Prendo i valori del primo oggetto dell'array
-let {peso} = biciclette[0];
-let {nome} = biciclette[0];
+let {peso, nome} = biciclette[0];
 
 // Ciclo tutti i valori per vedere quello con il peso minore
 for(let i = 0; i < biciclette.length; i++) {
